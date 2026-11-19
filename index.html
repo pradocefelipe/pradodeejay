@@ -12,6 +12,7 @@
 <meta property="og:title" content="DJ para Casamento, Aniversário, 15 Anos e Eventos no Rio de Janeiro | PradoDeejay">
 <meta property="og:description" content="Mais de 15 anos de experiência em festas e eventos no Rio de Janeiro. Orçamento sem compromisso pelo WhatsApp.">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"EntertainmentBusiness","name":"PradoDeejay","description":"DJ para casamentos, aniversários, 15 anos, festas e eventos corporativos no Rio de Janeiro.","areaServed":{"@type":"City","name":"Rio de Janeiro"},"telephone":"+5521981111836","email":"felipeecprado@gmail.com","sameAs":["https://instagram.com/eupradodj","https://soundcloud.com/pradodeejay","https://g.co/kgs/Yd3sQGm"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Como o repertório é definido?","acceptedAnswer":{"@type":"Answer","text":"É realizada reunião com o contratante para entender os gostos. Se preferir, pode enviar playlist de algum serviço de streaming e também preenche um questionário."}}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;600;800&family=Anton&display=swap" rel="stylesheet">
@@ -198,6 +199,17 @@ footer{padding-bottom:calc(96px + env(safe-area-inset-bottom,0px))}
   .formcard{padding:22px 18px}
   .t-bold{padding-left:12px}
 }
+
+/* Perguntas Frequentes */
+.faq-list{display:grid;gap:14px;margin-top:28px}
+.faq-item{background:var(--surface);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:10px;padding:20px 24px;transition:border-color .2s ease}
+.faq-item[open]{border-color:var(--orange)}
+.faq-item summary{font-weight:600;font-size:1.15rem;color:var(--text);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;user-select:none}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";font-family:var(--font);font-size:1.6rem;line-height:1;color:var(--orange);transition:transform .2s ease}
+.faq-item[open] summary::after{content:"−";color:var(--orange)}
+.faq-item p{margin:14px 0 0;color:var(--muted);line-height:1.6;font-size:1.05rem}
+
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 }
@@ -332,6 +344,18 @@ document.addEventListener('securitypolicyviolation',function(e){
       <div class="rev-actions">
         <button class="btn btn-line" id="more" type="button">Ver outras avaliações</button>
         <a class="btn btn-or" href="https://g.co/kgs/Yd3sQGm" target="_blank" rel="noopener">Ver todas no Google</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" style="padding-top:0">
+    <div class="wrap">
+      <h2 class="t t-bold">Perguntas Frequentes</h2>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>Como o repertório é definido?</summary>
+          <p>É realizada reunião com o contratante para entender os gostos. Se preferir, pode enviar playlist de algum serviço de streaming e também preenche um questionário.</p>
+        </details>
       </div>
     </div>
   </section>
